@@ -1,0 +1,20 @@
+A				B	//A and B both have 2.5 MSS to send to one another
+|seq=0 ack=0 size=MSS		|
+|------------------------------>|
+|seq=0 ack=MSS size=0.5MSS	|
+|<------------------------------|
+|seq=MSS ack=0.5MSS size=0.5MSS	|
+|------------------------------>|
+|seq=0.5MSS ack=1.5MSS size=MSS |
+|<------------------------------|
+|seq=1.5MSS ack=1.5MSS size=MSS	|
+|------------------------------>|
+|seq=1.5MSS ack=2.5MSS size=0.5MSS		
+|<------------------------------|
+|seq=N/A ack=2MSS size=0	|
+|------------------------------>|
+|seq=2MSS ack=2.5MSS size=0.5MSS|
+|<------------------------------|
+|seq=N/A ack=2.5MSS size=0	|
+|------------------------------>|
+
