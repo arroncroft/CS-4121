@@ -1,0 +1,17 @@
+TCP Congestion Control
+
+pg.297 in textbook
+
+a. [1...6], [23...26]
+
+b. [6...16], [17,22]
+
+c. TDA (triple duplicate ACK)
+
+d. Timeout
+
+e. Threshold = 32
+
+f. Threshold = 21
+
+g. Threshold = 13
