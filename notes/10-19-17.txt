@@ -1,17 +1,37 @@
 TCP Congestion Control
 
-pg.297 in textbook
+pg.296-297 in textbook
 
-a. [1...6], [23...26]
+A. [1...6], [23...26]
 
-b. [6...16], [17,22]
+B. [6...16], [17,22]
 
-c. TDA (triple duplicate ACK)
+C. TDA (triple duplicate ACK)
 
-d. Timeout
+D. Timeout
 
-e. Threshold = 32
+E. At 1st TR, Threshold = 32
 
-f. Threshold = 21
+F. At 18th TR, Threshold = 21
 
-g. Threshold = 13
+G. At 24th TR, Threshold = 13
+
+H. 7th TR
+
+TR  	|	# of seg sent	|	seg #
+--------|-------------------|---------
+1st 	|		1			|	1
+2nd 	|		2			|	2,3
+3rd 	|		4			|	4,5,6,7
+4th		|		8			|	8-15
+5th		|		16			|	16-31
+6th		|		32			|	32-63
+7th		|		64			|	64-96
+
+I. Congestion window = 4
+   Threshold = 4
+ 
+J. Congestion window = 4
+   Threshold = 21
+   
+K. 52 packets
